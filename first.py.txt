@@ -1,1 +1,14 @@
-print("hello")
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+
+if num1 == num2 == num3:
+    print("enternal numbers are equal.")
+else:
+    largest_number = num1
+    if num2 > largest_number:
+        largest_number = num2
+    if num3 > largest_number:
+        largest_number = num3
+    print(largest_number,"is the largest")
+    
