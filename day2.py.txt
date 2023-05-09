@@ -1,4 +1,4 @@
-# write python programm to calculate to total serface volume and area of cylender.
+# problem1: write python programm to calculate to total serface volume and area of cylender.
 # if h=4 and r=6
 
 import math
@@ -13,6 +13,18 @@ print (round(survece_area,2))
 
 print (round(volume,2))
 
+print ("__________________________________")
+
+#problem2: if someone bught 10tons of iron where the value of one ton is one rial write program calculate the total cost of purchase eith on addition of 5%
+
+n= 10
+y= 5/100
+
+vat =n*y
+price = n + vat
+
+print (vat)
+print(price)
 
 
 
