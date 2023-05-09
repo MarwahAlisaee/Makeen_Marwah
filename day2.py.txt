@@ -1,0 +1,18 @@
+# write python programm to calculate to total serface volume and area of cylender.
+# if h=4 and r=6
+
+import math
+
+r= 6
+h= 4
+survece_area = 2*math.pi*h*r +2*math.pi*pow(r,2)
+
+volume = math.pi*pow(r,2)*h
+
+print (round(survece_area,2))
+
+print (round(volume,2))
+
+
+
+
