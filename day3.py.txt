@@ -1,0 +1,139 @@
+"""  # تفعيل الجمل الشرطية في السنة الكبيسة 
+
+years = int (input (" Enter the Years : "))
+
+if ((years%4 ==0) or (years%400==0)):
+   print (" that year سنة كبيسة ")
+else :
+   print ("that year  ليست سنة كبيسة")
+   
+print ("________________________________________")
+
+# memory(x) =20 , file_size(y)=12, number_of_file(n)=2 do if else in python x n y 
+
+# write program to know if memory size enought or not --> memory(x) , file_size(y), number_of_file(n) 
+  
+x = int(input("Enter the memory: "))
+y = int(input("Enter the file size: "))
+n = int(input("Enter the number of files: "))
+
+# totel file size
+total_size = y * n
+
+# Check if the memory can store file 
+if total_size <= x:
+    print("Yes")
+else:
+    print("No") 
+    
+print ("________________________________________")
+
+
+# find the middle character from the given string.for example if you have word "car" , the result will be started with string "a", but the string is even, it will get the two middle character. if the string is "cars", the result is "ar".
+
+def middleCh(string):
+    length = len(string)
+    if length % 2 == 0:
+        middle1 = length // 2 - 1
+        middle2 = length // 2
+        return (string[middle1:middle2+1])
+    else:
+        middle = length // 2
+        return (string[middle])
+        
+word = str(input("Enter the word "))
+print (middleCh (word))
+
+
+print ("________________________________________")
+
+
+# write program in python to help user calculat the temprature degree in Celusius or Fahrenheit. If it is Celusius, transfer it to Fahrenheit and vice versa.
+
+def temperature(num, tem_unit):
+    if (tem_unit == 'C' or tem_unit == 'c'):
+        f = (num * 9/5) + 32
+        return f, 'F'
+    elif (tem_unit == 'F' or tem_unit == 'f'):
+        c = (num - 32) * 5/9
+        return c, 'C'
+    else :
+        return null
+        
+num = int(input("Enter the number temperature: "))
+tem_unit = str(input("Enter the number temperature unit: "))
+
+print ("temperature is ",temperature (num,tem_unit))
+
+print ("________________________________________")
+
+# write progarm that print first 10 even number using while loop
+
+count = 0
+num = 0
+
+while count < 10:
+    if num % 2 == 0:
+        print(num)
+        count= count+ 1
+    num =num+ 1
+
+
+# write progarm that print first 10 even number and squares using while loop
+
+count = 0
+num = 0
+
+while count < 10:
+    if num % 2 == 0:
+        print(num, num**2)
+        count =count + 1
+    num =num + 1
+
+# write a while loop that prints the following sequence (105,98,91,...7)
+
+num = 105
+
+while num >= 7:
+    print(num)
+    num =num - 7
+    
+
+# write a while loop input= 10 and output (2,5,10)
+
+n = 10
+i = 1
+while i <= n:
+    if n % i == 0:
+       print(i)
+    i =i + 1
+    
+    
+""" 
+
+# write a while loop input= hello and output (37,101,108,108,111)
+
+word = str (input(" write the word: "))
+str=0
+length =len(word)
+while(str < length):
+     print(ord(word[str]))
+     str=str+1
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
