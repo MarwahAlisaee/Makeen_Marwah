@@ -1,0 +1,39 @@
+import math
+
+# Define the input Vactory
+vactory = [
+          [-10, 20, -10, -18],
+          [-10, 20, 0, 3],
+          [0, 3, 8, 17],
+          [8, 17, 10, -16],
+          [10, -16, -10, -18]
+]
+
+#difine the y coordinate range 
+y_max = 20
+y_min = -18
+y=[]
+
+#calculate length and slope of each segment
+for i in range(len(vactory)):
+    segment = vactory [i]
+    
+    x1,y1,x2,y2 = segment
+    length = math.sqrt((x2 -x1)**2 + ((y2 -y1)**2))
+    
+    if x2 -x1 ==0:
+      slope ="NA"
+    else:
+      slope = round((y2 -y1) / (x2 -x1), 1)
+      
+    print("s" + str(i+1), length, slope)
+    
+    y.append(y1)
+    y.append(y2)
+print("min of y: " , min(y))
+print("max of y: " , max(y))
+    
+    
+  
+
+  
