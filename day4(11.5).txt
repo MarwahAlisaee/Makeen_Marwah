@@ -1,0 +1,65 @@
+"""
+# example to put the letter in One line:
+
+stateName = "Virginia"
+for letter in stateName:
+  print (letter, end='')
+  
+print ("_____________________________________________________________________")
+
+
+
+totel=0.0
+i =0
+
+range1= int (input ("enter range: "))
+for i in range(range1):
+  enternum= int(input("Enter the num but not '': "))
+  totel=totel + enternum
+  
+  
+avg = float(totel / range1)
+print ("avg=", avg)
+
+
+print ("_____________________________________________________________________")
+
+
+for i in range(3) :
+  for j in range (4):
+     print ("[]" , end ="")
+  print ()
+  
+print ("_____________________________________________________________________")
+
+ - key - 97) % 26 + 97)
+
+
+
+#assume that you have a massage like "hello",your message was encrypted to be like "khoor" write programming code to decrepit the folloing message to get the orginal one.
+
+#Message="|rx#duh#juhdwh"
+
+text= input("text: ")
+
+for i in text:
+    r= ord(i)-3
+    d=chr (r)
+    print (d,end='')
+    
+"""
+
+# print all perfect number from 1 to 100, if you know that a perfect numbers is positive integer that is equale to the sum of its positive divisors, excluding the number itself for instance, 6 has divisisor 1,2 and 3 (exluding itself )and 1+2+3 =6 so 6 is perfect number.
+
+for n in range(1,101):
+    d=0
+    for s in range(1, n):
+       if (n%s==0):
+          d=d+s
+    if (d==n):
+      print (n)
+  
+
+
+   
+
