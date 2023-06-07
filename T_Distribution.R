@@ -1,0 +1,15 @@
+sample_a=c(1,4,4,4,5,5,5,8)
+sample_b=c(1,2,3,4,5,6,7,8)
+sd(sample_a)
+sd(sample_b)
+mean(sample_a)
+mean(sample_b)
+boxplot(sample_a, col = "red") 
+boxplot(sample_b, col="blue")
+#title(main = list(c("sample_a","sample_b")))
+hist(sample_a, col = "green")
+hist(sample_b, col = "pink")
+par=(mfrow=c(2,2))
+
+#alpha=0.05
+#t_score= dt(p)
